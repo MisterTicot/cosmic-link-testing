@@ -3,8 +3,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="
+    form-action 'none';
     default-src 'none';
     script-src 'self';
     style-src 'self';
@@ -13,10 +14,13 @@
     connect-src *;
   ">
 
+  <script src="index.js"></script>
+
   <title>Cosmic.Link ~ Stellar transactions over URL</title>
-  <meta property="og:title" content="Cosmic.Link ~ Stellar transactions over URL">
-  <meta property="og:description" name="description" content="Cosmic.Link
-    provides a convenient way to share Stellar transactions as URLs.">
+  <meta property="og:title"
+    content="Cosmic.Link ~ Stellar transactions over URL">
+  <meta property="og:description" name="description"
+    content="Cosmic.Link provides a convenient way to share Stellar transactions as URLs.">
 
   <meta property="og:image" content="https://cosmic.link/icons/512x512.png">
   <meta property="og:image:height" content="512">
@@ -24,22 +28,18 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="msapplication-config" content="browserconfig.xml">
-  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
 
-  <link rel="shortcut icon" href="icons/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="icons/96x96.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch.png">
   <link rel="mask-icon" href="icons/safari.svg" color="#5bbad5">
 
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
-  <!-- index.js may need to address document.body -->
-  <script src="index.js"></script>
-  <link rel="stylesheet" type="text/css" href="index.css">
 
   <header>
     <h1 id="websiteUrl">=(G_G)=</h1><span id="query"></span>
@@ -159,7 +159,6 @@
       </p>
     </section>
   </main>
-
 
   <img id="tamper">
 
