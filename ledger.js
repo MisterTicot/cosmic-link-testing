@@ -1,2 +1,2 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{156:function(e,o){},25:function(e,o,n){var r=n(45);r.isBrowser?void 0===window.StellarSdk?console.error("Missing dependency: StellarSdk"):e.exports=window.StellarSdk:e.exports=r.nodeRequire("stellar-sdk")}}]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{153:function(n,w){}}]);
 //# sourceMappingURL=ledger.js.map
