@@ -352,13 +352,13 @@ html {
   margin: 1.4em 0; }
 
 .cosmiclink_description ul {
-  margin: 0.53469em 0;
-  padding-left: 0.53469em;
+  margin: 0.53em 0;
+  padding-left: 0.53em;
   list-style-type: none;
   list-style-position: inside; }
 
 .cosmiclib_transactionNode > * {
-  margin: 0.8652em 0; }
+  margin: 0.87em 0; }
 
 .cosmiclib_sideInfo {
   border-left: medium solid lightgrey; }
@@ -367,8 +367,8 @@ html {
   background: ghostwhite; }
 
 .cosmiclib_sourcedOperation > * {
-  margin: 0.20425em 0;
-  padding-left: 0.53469em; }
+  margin: 0.2em 0;
+  padding-left: 0.53em; }
 
 .cosmiclib_sourcedOperation .cosmiclib_operation {
   border-left: medium solid transparent; }
@@ -377,9 +377,9 @@ html {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+  justify-content: space-between; }
 
 .cosmiclib_signersNode:empty {
   display: none; }
@@ -406,7 +406,7 @@ html {
   color: tomato; }
 
 .cosmiclib_signers li {
-  padding-right: 0.20425em; }
+  padding-right: 0.2em; }
 
 .cosmiclib_signed {
   background-color: lightgreen; }
@@ -449,7 +449,7 @@ html {
   display: inline-block;
   width: 1em;
   height: 1em;
-  margin: 0 0.20425em;
+  margin: 0 0.2em;
   border-radius: 100%;
   background-color: grey;
   vertical-align: middle;
