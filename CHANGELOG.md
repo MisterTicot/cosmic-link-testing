@@ -14,6 +14,106 @@ Versioning](https://semver.org/spec/v2.0.0.html)**. Version syntax is
 backward-compatibility and can be updated to without risk of breakage. For major
 releases, please check this changelog before upgrading.
 
+## 1.14.0 - 2019-12-07
+
+### Changed
+
+- UI: Improve transaction submission report. Callbacks & StellarGuard errors are
+  now properly handled. (Thanks [@dexter0x8](https://keybase.io/dexter0x8))
+
+### Fixed
+
+- Logic: Fix a bug that could prevent tx submission. It was happening when
+  submitting from the widget using hardware wallets. (Thanks
+  [@dexter0x8](https://keybase.io/dexter0x8)
+
+## 1.13.3 - 2019-12-02
+
+### Fixed
+
+- Logic: Fix transaction error handling. In some cases the error was not
+  properly displayed. (Thanks [u/Eth_Man](https://reddit.com/u/Eth_Man))
+
+## 1.13.2 - 2019-11-30
+
+### Fixed
+
+- UI: Improve pubkey account box description. (Thanks [@b1tcc])
+
+## 1.13.1 - 2019-11-27
+
+### Fixed
+
+- Logic: Fix Lobstr/StellarTerm redirections.
+
+## 1.13.0 - 2019-11-27
+
+### Added
+
+- UI: Add transaction validation report. This includes explanations of what went
+  wrong in case of error.
+- UI: Add wallets: `Lobstr Web`, `StellarTerm`. At this time, those wallets only
+  support `payment` and `changeTrust` operations, on the public network.
+
+## 1.12.0 - 2019-11-26
+
+### Changed
+
+- Logic: Update [@cosmic-plus/ledger-wallet] to 1.5.0. (bugfixes)
+
+### Fixed
+
+- Logic: Widget doesn't need to preload fonts.
+
+## 1.11.2 - 2019-11-23
+
+### Fixed
+
+- Logic: Fix ServiceWorker installation.
+
+## 1.11.1 - 2019-11-23
+
+### Fixed
+
+- Logic: Fix fonts url.
+
+## 1.11.0 - 2019-11-23
+
+### Added
+
+- Logic: Add asynchronous loading of style resources. This speeds up page
+  display.
+- UI: Add dynamic QR code scaling.
+
+### Changed
+
+- Logic: Make QR code generation asynchronous. This speeds up page loading.
+- UI: Vertically center Cosmic.link main UI.
+- UI: Vertically center `widget.html`.
+
+### Fixed
+
+- Logic: Prevent loading of unused resources. Some GUI-related resources were
+  loaded even when immediately redirecting to wallet.
+- Logic: Install `widget` into browser cache.
+- UI: Use compressed fonts. This speeds-up text display.
+
+## 1.10.1 - 2019-11-18
+
+### Fixed
+
+- Meta: Include fonts with the installed files. This speeds up the loading time.
+
+## 1.10.0 - 2019-11-16
+
+### Changed
+
+- UI: Rewrite the "About" tab.
+
+### Fixed
+
+- Logic: Fix the direct link toward the help tab.
+
 ## 1.9.0 - 2019-11-15
 
 ### Changed
@@ -282,4 +382,6 @@ history](https://github.com/cosmic-plus/webapp-cosmic-link/commits/master).
 [stellar-sdk]: https://github.com/stellar/js-stellar-sdk/blob/master/CHANGELOG.md
 [pwa]: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Introduction
 [widget.css]: https://github.com/cosmic-plus/https-cosmic-link/blob/master/widget.css
+[@b1tcc]: https://keybase.io/b1tcc
+[@cosmic-plus/ledger-wallet]: https://cosmic.plus/#view:js-ledger-wallet/CHANGELOG
 [@cosmic-plus/trezor-wallet]: https://cosmic.plus/#view:js-trezor-wallet/CHANGELOG

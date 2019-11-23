@@ -15,7 +15,11 @@
     connect-src *;
   ">
 
+  <!-- Possible immediate redirection (blocking on purpose) -->
   <script src="index.js"></script>
+
+  <script src="stellar-sdk.js" defer></script>
+  <link rel="preload" href="widget.css" as="style">
 
   <title>Cosmic.Link ~ Stellar transactions over URL</title>
   <meta property="og:title"
@@ -95,6 +99,5 @@
       </form>
     </section>
 
-  <script src="stellar-sdk.js"></script>
 </body>
 </html>
