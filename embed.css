@@ -705,11 +705,11 @@ form .third + label {
 
 #copied {
   position: absolute;
+  right: 6.5%;
   padding: 0.2em 0.6em;
-  transform: translate(0.1em, 0.45em);
+  transform: translateY(0.45em);
   color: #006ae8;
-  font-weight: bold;
-  background: #fff;
+  background: #f4f4f4;
   opacity: 0.9; }
 
 #qrForm > div {
